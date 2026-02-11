@@ -3,16 +3,14 @@ set -e
 
 fi="flatpak install flathub -y"
 
-sudo apt remove -y firefox* thunderbird*
+sudo apt remove -y firefox* thunderbird* matrix* transmission*
 
-sudo apt install -y micro fish eza btop ripgrep mpv meld
+sudo apt install -y micro fish eza btop ripgrep mpv meld ncdu
 
 $fi org.kde.tokodon
 $fi com.brave.Browser
 $fi eu.betterbird.Betterbird
 $fi io.github.shiftey.Desktop #GitHub Desktop
-$fi md.obsidian.Obsidian
-$fi org.geany.Geany
 $fi org.keepassxc.KeePassXC
 $fi org.localsend.localsend_app
 $fi org.signal.Signal
